@@ -61,6 +61,13 @@ namespace _6_7ScrapingHomework
                 {
                     item.Image = image.Attributes["data-img-url"].Value;
                 }
+
+                var comments = c.QuerySelector(".td-module-comments");
+                if(comments != null)
+                {
+                    item.Comments = comments.TextContent;
+                }
+
                 items.Add(item);
             }
             return items;

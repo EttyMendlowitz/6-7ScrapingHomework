@@ -8,5 +8,6 @@ namespace _6_7ScrapingHomework
         public string Text { get; set; }
         public string Image { get; set; }
         public string Url { get; set; }
+        public string Comments { get; set; }
     }
 }

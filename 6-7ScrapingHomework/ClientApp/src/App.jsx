@@ -21,8 +21,9 @@ const App = () => {
                 <thead>
                     <tr>
                         <th>Image</th>
-                        <th>name</th>
-                        <th>topic</th>
+                        <th>Title</th>
+                        <th>Text</th>
+                        <th>Comments</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,6 +36,9 @@ const App = () => {
                             </td>
                             <td>
                                 {item.text}
+                            </td>
+                            <td>
+                                {item.comments }
                             </td>
                         </tr>
                     })}
